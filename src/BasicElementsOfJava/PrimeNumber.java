@@ -8,12 +8,11 @@ public class PrimeNumber {
         System.out.println("Podaj liczbę większą od 1. Sprawdzimy czy podana liczba jest liczbą pierwszą.");
 
         Scanner in = new Scanner(System.in);
-        double x = in.nextDouble();
-        double liczba;
-        double dzielnik = 2;
+        double liczba = in.nextDouble();
+        double dzielnik;
         double resztaZDzielenia;
 
-        for (liczba = x; dzielnik > 1 && dzielnik < x; dzielnik++) {
+        for (dzielnik = 2; dzielnik > 1 && dzielnik < liczba; dzielnik++) {
             resztaZDzielenia = liczba % dzielnik;
 
             if (resztaZDzielenia == 0) {
